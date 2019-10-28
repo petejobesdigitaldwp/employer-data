@@ -28,7 +28,11 @@ Methoodology | Find data on employers
       <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
         Methodology
       </h1>
-      <span class="govuk-caption-xl govuk-!-margin-bottom-8">Where do the numbers in "Manhattan" come from?</span>
+
+      <p class="govuk-body">This service lets you view information about employers. The prototype is designed to support the work of DWP employees who have a role in providing information about work and skills.</p> 
+      <p class="govuk-body">It is currently based on HMRC Pay As You Earn (PAYE) data from the 2015/2016 tax year. This data is broken down by local authority district. </p> 
+
+      <span class="govuk-caption-xl govuk-!-margin-bottom-8">Where do the numbers in this service come from?</span>
 
       <h4 id="top" class="govuk-heading-m">Contents</h4>
 
@@ -54,17 +58,10 @@ Methoodology | Find data on employers
 
         <p class="govuk-body">
 
-            We source the data for "Manhattan" from <strong>Her Majesty's Revenue and Customs (HMRC)</strong>. It represens data extracted from <strong>P45/P46 and P14</strong> records.
+            We source the data in <strong>Find data on employers</strong> from <strong>Her Majesty's Revenue and Customs (HMRC)</strong>. It represents data taken from <strong>P45/P46 and P14</strong> records. These records summarise a person's employment at three points: when they end a job, start a job, or every year during their employment.             
+        </p><p class="govuk-body">The data applies to the tax year from <strong>April 2015 to March 2016</strong>. It lists each employment spell (a person may have more than one job at once) as a record. Each record also shows the gross pay (before tax and other deductions) earned by an individual from their employer during the year. 
 
-            These summarise a person's employment taken from three points. When they end a job, start a job, or every year during someone's employment.            
-
-            At source, the data covers the tax year from <strong>April 2015 to March 2016</strong>. It lists each employment spell — a person may have more than one job at once — as a record.            
-
-        </p><p class="govuk-body">Each record has information on start dates and end dates. It also has the gross pay to that individual, by that employer, over the year.
-
-        </p><p class="govuk-body">As this data is about employers, and belongs to another government department, it is handled carefully by DWP.
-
-            It is subject to a <a class="govuk-link" href="Memorandum of understanding">memorandum of understanding</a> (MoU) between HMRC and DWP. This MoU controls how we can use the data.
+        </p><p class="govuk-body">Data is handled very carefully by DWP. Data used to provide this service is subject to a <a class="govuk-link" href="Memorandum of understanding">memorandum of understanding</a> (MoU) between HMRC and DWP. This MoU controls how we can use the data.
 
         </p>
 
@@ -94,7 +91,7 @@ Methoodology | Find data on employers
 
         <p class="govuk-body">
 
-            We derive these aggregated statistics from the HMRC data.
+            We get these aggregated statistics from the HMRC data.
 
         </p><p class="govuk-body">We count the number of employees who lived in
 
@@ -112,9 +109,7 @@ Methoodology | Find data on employers
 
         </p><p class="govuk-body">This data is incomplete, so we project the counts. We do this by matching with published national statistics to make an estimate.
 
-        </p><p class="govuk-body">This produces an estimated count for March 2016.
-
-            This projection gives us more accurate trends, but individual counts may not be accurate.
+        </p><p class="govuk-body">This produces an estimated count for March 2016. This projection gives us more accurate trends, but individual counts may not be accurate and should be used as indication only.
 
         </p>
 
@@ -144,19 +139,15 @@ Methoodology | Find data on employers
 
             We derive these aggregated statistics from the HMRC data.
 
-        </p><p class="govuk-body">It is a weighted mean of individual gross pay for employees who lived in a given <a class="govuk-link" href="https://geoportal.statistics.gov.uk/datasets/local-authority-districts-april-2015-names-and-codes-in-the-united-kingdom">2015 Local Authority District</a> who
+        </p><p class="govuk-body">It is a weighted mean of individual gross pay (before tax and other deductions are taken out) for employees who lived in a given <a class="govuk-link" href="https://geoportal.statistics.gov.uk/datasets/local-authority-districts-april-2015-names-and-codes-in-the-united-kingdom">2015 Local Authority District</a> who
 
             worked for a given company in April 2015.
 
-        </p><p class="govuk-body">We chose weighted means, over the more standard median measure.
+        </p><p class="govuk-body">A weighted mean is a type of average. Instead of each data point contributing equally to the final average, some data points contribute more weight than others. 
+            
+            </p><p class="govuk-body">We chose weighted means, over the more standard median measure, to allow us to combine aggregated stats in a consistent way. As a result, outliers have a greater effect on the data. 
 
-            This is to allow us to combine aggregated stats in a consistent way.
-
-            Unfortunately, as a result, outliers have a greater affect on the data.
-
-        </p><p class="govuk-body">To lessen this effect, we calculate weighted means from medians of a lower level geography, instead of a local authority.
-
-            We then use these to calculate the numbers for local authorities.
+        </p><p class="govuk-body">To lessen this effect, we calculate weighted means from medians of a lower level geography, instead of a local authority. We then use these to calculate the numbers for local authorities.
 
         </p>
 
@@ -186,15 +177,11 @@ Methoodology | Find data on employers
 
             We derive these statistics from the HMRC data, as well as published statistics on employment.
 
-        </p><p class="govuk-body">We compare the distributions of the number of employees at the <a class="govuk-link" href="#counts-start">start</a> of the year (April 2015) to national statistics.
+        </p><p class="govuk-body">We compare the distributions of the number of employees at the <a class="govuk-link" href="#counts-start">start of the year (April 2015)</a> to national statistics.
 
-            We then do the same for the <a class="govuk-link" href="#counts-end">end</a> of the year (March 2016), which is incomplete.
+            We then do the same for the <a class="govuk-link" href="#counts-end">end of the year (March 2016)</a>, which is incomplete.
 
-        </p><p class="govuk-body">Next, we use the relationship between the distributions at the start of the year to adjust the values for the end of the year.
-
-            This then lets us estimate a change between the start and end.
-
-            We also calculate a percentage change by dividing the change by the employee count at the start of the year.
+        </p><p class="govuk-body">Next, we use the relationship between the distributions at the start of the year to adjust the values for the end of the year. This then lets us estimate a change between the start and end. We also calculate a percentage change by dividing the change by the employee count at the start of the year. 
 
         </p>
 
@@ -222,23 +209,19 @@ Methoodology | Find data on employers
 
         <p class="govuk-body">
 
-            We derive these statistics from the HMRC data.
+            We derive these statistics from the HMRC data.They describe how widespread an employer's footprint is across the country. 
 
-        </p><p class="govuk-body">These describe how widespread an employer's footprint is across the country in plain English.
+           </p><p class="govuk-body">We do this by using <a class="govuk-link" href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">information entropy</a>.
 
-        </p><p class="govuk-body">We do this by using <a class="govuk-link" href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">information entropy</a>.
+            Information entropy is highest when the employee count for an employer is the same in every local authority in the country. It is lowest when the employee count for an employer is zero in all local authorities in the country, except one. 
 
-            Information entropy is highest when the employee count for an employer is the same in every local authority in the country.
+        </p><p class="govuk-body">The top 1% of entropy values are considered to represent <strong>national</strong> employers.
 
-            It is lowest when the employee count for an employer is zero in all local authorities in the country, except one.
+        </p><p class="govuk-body">The top 10% of entropy values are considered to represent <strong>regional</strong> employers. 
 
-        </p><p class="govuk-body">The top one percent of entropy values are considered to represent "national" employers.
+        </p><p class="govuk-body">The bottom 90% of entropy values are considered to represent <strong>local</strong> employers. 
 
-        </p><p class="govuk-body">The top ten percent of entropy values are considered to represent "regional" employers.
-
-        </p><p class="govuk-body">The bottom ninety percent of entropy values are considered to represent "local" employers.
-
-        </p><p class="govuk-body">We picked these thresholds through trial and error.
+        </p><p class="govuk-body">These three thresholds were chosen through trial and error. 
 
         </p>
 
