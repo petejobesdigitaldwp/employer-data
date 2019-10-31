@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Manhattan
+BROADSTREET GREAT WILSON (EUROPE) | Find data on employers
 {% endblock %}
 
 {% block content %}
@@ -161,6 +161,47 @@ Heatmap
     <section class="govuk-tabs__panel" id="table">
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-full">
+
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+            Table of data
+              
+              </h3><span class="govuk-hint">Where employees live for the tax year 2015-2016</span>  
+              </div>
+              <div class="govuk-grid-column-one-third"></div>
+              </div>
+
+              <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+        
+                      <th class="govuk-table__header" scope="col"><span class="th-sort-link">Location</span></th>
+                      <th class="govuk-table__header" scope="col"><span class="th-sort-link">Employees</span></th>
+                      <th class="govuk-table__header" scope="col"><span class="th-sort-link">Change in employees</span></th>
+                    <th class="govuk-table__header" scope="col"><span class="th-sort-link">Average salary</span></th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+        
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"><a href="emp-bgw-newcastle">Newcastle upon Tyne</a></th>
+                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Employees: </span>804</td>    
+                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Change in employees: </span>7.61%</td>
+                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Average salary: </span>£10,461</td>
+                         
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row"><a href="emp-bgw-newcastle">Sunderland</a></th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Employees: </span>804</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Change in employees: </span>7.61%</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Average salary: </span>£10,461</td>
+                       
+                  </tr>
+                                
+                </tbody>
+              </table>
 
             </div>
         </div>
