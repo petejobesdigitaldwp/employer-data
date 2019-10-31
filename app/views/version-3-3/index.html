@@ -14,53 +14,52 @@ Find data on employers
   html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
 }) }}
 
-  <div class="govuk-grid-row govuk-!-margin-top-7">
-    <div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-row govuk-!-margin-top-7">
+
+  <div class="govuk-grid-column-two-thirds">
+
       <h1 class="govuk-heading-xl">
-          Sign in
+
+        Find data on employers
+
       </h1>
 
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-warning-text__assistive">Warning</span>
-          Access to the prototype is logged for audit and reference purposes. Do not attempt to access this prototype unluess you have been given explicit approval.
-        </strong>
-      </div>
+      <p class="govuk-body-l">
 
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="username">
-          Username
-        </label>
-        <input class="govuk-input" id="username" name="username" type="text">
-      </div>
+          This service lets you view information about employers.
 
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="password">
-          Password
-        </label>
-        <input class="govuk-input" id="password" name="password" type="password">
-      </div>
+      </p>
 
-      <div class="govuk-form-group">
-      <div class="govuk-checkboxes">
-        <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="remember-me" name="remember-me" type="checkbox" value="remember-me">
-          <label class="govuk-label govuk-checkboxes__label" for="remember-me">
-            Remember me
-          </label> </div>
-        </div>
-      </div>
+      <p class="govuk-body">
 
-     
+          It is currently based on HMRC Pay As You Earn (PAYE) data from the 2015/2016 tax year. This data is broken down by local authority district.
 
-      {{ govukButton({
-        text: "Sign in",
-        href: "start-page"
-    }) }}
+      </p>
 
+      <p class="govuk-body">
 
-    </div>
+        You can use the charts and tables in this tool to find information about:
+
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+
+          <li>The number of employees living in a local authority district by employer</li>
+            <li>Employer salaries by location</li>
+            <li>Growth or reduction of an employer’s workforce living in a location (this measure is experimental)</li>
+            <li>The geographic spread of employers and employees</li>
+            
+
+          </ul>
+
+      <a href="search" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-4">
+
+        Start now
+
+      </a>
+
+  </div>
+
 </div>
 </div>
 
