@@ -1,0 +1,267 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Methoodology | Find data on employers
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="search">Home</a>
+        </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Methodology</li>
+    </ol>
+  </div>
+
+  <div class="govuk-grid-row govuk-!-margin-top-5">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+        Methodology
+      </h1>
+      <span class="govuk-caption-xl govuk-!-margin-bottom-8">Where do the numbers in this service come from?</span>
+      <p class="govuk-body">This service lets you view information about employers. The prototype is designed to support the work of DWP employees who have a role in providing information about work and skills.</p> 
+      <p class="govuk-body">It is currently based on HMRC Pay As You Earn (PAYE) data from the 2015/2016 tax year. This data is broken down by local authority district. </p> 
+
+     
+
+      <h4 id="top" class="govuk-heading-m">Contents</h4>
+
+        <ul class="govuk-list govuk-list--bullet">
+
+            <li><a class="govuk-link" href="#data-source">Data source</a></li>
+
+            <li><a class="govuk-link" href="#employee-counts">Employee counts</a></li>
+
+            <li><a class="govuk-link" href="#average-salaries">Average salaries</a></li>
+
+           <li><a class="govuk-link" href="#changes">Changes</a></li>
+
+            <li><a class="govuk-link" href="#extents">Employer extents</a></li>
+
+        </ul>
+
+        <h2 id="data-source" class="govuk-heading-l">
+
+            Data source
+
+        </h2>
+
+        <p class="govuk-body">
+
+            We source the data in <strong>Find data on employers</strong> from <strong>Her Majesty's Revenue and Customs (HMRC)</strong>. It represents data taken from <strong>P45/P46 and P14</strong> records. These records summarise a person's employment at three points: when they end a job, start a job, or every year during their employment.             
+        </p><p class="govuk-body">The data applies to the tax year from <strong>April 2015 to March 2016</strong>. It lists each employment spell (a person may have more than one job at once) as a record. Each record also shows the gross pay (before tax and other deductions) earned by an individual from their employer during the year. 
+
+        </p><p class="govuk-body">Data is handled very carefully by DWP. Data used to provide this service is subject to a <a class="govuk-link" href="Memorandum of understanding">memorandum of understanding</a> (MoU) between HMRC and DWP. This MoU controls how we can use the data.
+
+        </p>
+
+        <div class="app-back-to-top" data-module="app-back-to-top" style="margin-bottom: 20px;">
+
+            <a class="govuk-link govuk-link--no-visited-state" href="#top">
+
+                <svg class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+
+                    <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+
+                </svg>
+
+                Back to top
+
+            </a>
+
+        </div>
+
+        <h2 id="employee-counts" class="govuk-heading-l">
+
+            Employee counts
+
+        </h2>
+
+        <h4 id="counts-start" class="govuk-heading-m">Start of year counts</h4>
+
+        <p class="govuk-body">
+
+            We get these aggregated statistics from the HMRC data.
+
+        </p><p class="govuk-body">We count the number of employees who lived in
+
+            a <a href="https://geoportal.statistics.gov.uk/datasets/local-authority-districts-april-2015-names-and-codes-in-the-united-kingdom">2015 Local Authority District</a>,
+
+            and who worked for a given company, in April 2015.
+
+        </p>
+
+        <h4 id="counts-end" class="govuk-heading-m">End of year counts<strong class="govuk-tag" style="margin-left: 10px; top: -0.1rem; position: relative;">experimental</strong></h4>
+
+        <p class="govuk-body">
+
+            We also count again, after a measured <a class="govuk-link" href="#changes">change of employees</a> through the year.
+
+        </p><p class="govuk-body">This data is incomplete, so we project the counts. We do this by matching with published national statistics to make an estimate.
+
+        </p><p class="govuk-body">This produces an estimated count for March 2016. This projection gives us more accurate trends, but individual counts may not be accurate and should be used as indication only.
+
+        </p>
+
+        <div class="app-back-to-top" data-module="app-back-to-top" style="margin-bottom: 20px;">
+
+            <a class="govuk-link govuk-link--no-visited-state" href="#top">
+
+                <svg class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+
+                    <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+
+                </svg>
+
+                Back to top
+
+            </a>
+
+        </div>
+
+        <h2 id="average-salaries" class="govuk-heading-l">
+
+            Average salaries
+
+        </h2>
+
+        <p class="govuk-body">
+
+            We derive these aggregated statistics from the HMRC data.
+
+        </p><p class="govuk-body">It is a weighted mean of individual gross pay (before tax and other deductions are taken out) for employees who lived in a given <a class="govuk-link" href="https://geoportal.statistics.gov.uk/datasets/local-authority-districts-april-2015-names-and-codes-in-the-united-kingdom">2015 Local Authority District</a> who
+
+            worked for a given company in April 2015.
+
+        </p><p class="govuk-body">A weighted mean is a type of average. Instead of each data point contributing equally to the final average, some data points contribute more weight than others. 
+            
+            </p><p class="govuk-body">We chose weighted means, over the more standard median measure, to allow us to combine aggregated stats in a consistent way. As a result, outliers have a greater effect on the data. 
+
+        </p><p class="govuk-body">To lessen this effect, we calculate weighted means from medians of a lower level geography, instead of a local authority. We then use these to calculate the numbers for local authorities.
+
+        </p>
+
+        <div class="app-back-to-top" data-module="app-back-to-top" style="margin-bottom: 20px;">
+
+            <a class="govuk-link govuk-link--no-visited-state" href="#top">
+
+                <svg class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+
+                    <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+
+                </svg>
+
+                Back to top
+
+            </a>
+
+        </div>
+
+        <h2 id="changes" class="govuk-heading-l">
+
+            Changes <strong class="govuk-tag" style="margin-left: 10px; top: -0.1rem; position: relative;">experimental</strong>
+
+       </h2>
+
+        <p class="govuk-body">
+
+            We derive these statistics from the HMRC data, as well as published statistics on employment.
+
+        </p><p class="govuk-body">We compare the distributions of the number of employees at the <a class="govuk-link" href="#counts-start">start of the year (April 2015)</a> to national statistics.
+
+            We then do the same for the <a class="govuk-link" href="#counts-end">end of the year (March 2016)</a>, which is incomplete.
+
+        </p><p class="govuk-body">Next, we use the relationship between the distributions at the start of the year to adjust the values for the end of the year. This then lets us estimate a change between the start and end. We also calculate a percentage change by dividing the change by the employee count at the start of the year. 
+
+        </p>
+
+        <div class="app-back-to-top" data-module="app-back-to-top" style="margin-bottom: 20px;">
+
+            <a class="govuk-link govuk-link--no-visited-state" href="#top">
+
+                <svg class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+
+                    <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+
+                </svg>
+
+                Back to top
+
+            </a>
+
+        </div>
+
+        <h2 id="extent" class="govuk-heading-l">
+
+            Employer extents <strong class="govuk-tag" style="margin-left: 10px; top: -0.1rem; position: relative;">experimental</strong>
+
+        </h2>
+
+        <p class="govuk-body">
+
+            We derive these statistics from the HMRC data.They describe how widespread an employer's footprint is across the country. 
+
+           </p><p class="govuk-body">We do this by using <a class="govuk-link" href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">information entropy</a>.
+
+            Information entropy is highest when the employee count for an employer is the same in every local authority in the country. It is lowest when the employee count for an employer is zero in all local authorities in the country, except one. 
+
+        </p><p class="govuk-body">The top 1% of entropy values are considered to represent <strong>national</strong> employers.
+
+        </p><p class="govuk-body">The top 10% of entropy values are considered to represent <strong>regional</strong> employers. 
+
+        </p><p class="govuk-body">The bottom 90% of entropy values are considered to represent <strong>local</strong> employers. 
+
+        </p><p class="govuk-body">These three thresholds were chosen through trial and error. 
+
+        </p>
+
+        <div class="app-back-to-top" data-module="app-back-to-top" style="margin-bottom: 20px;">
+
+            <a class="govuk-link govuk-link--no-visited-state" href="#top">
+
+                <svg class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+
+                    <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+
+                </svg>
+
+                Back to top
+
+            </a>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        
+    </div>
+  </div>
+
+
+
+ 
+
+
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+          </div>
+    </div>
+
+
+ 
+    
+
+{% endblock %}
+
+{% block pageScripts %}
+
+
+{% endblock %}
