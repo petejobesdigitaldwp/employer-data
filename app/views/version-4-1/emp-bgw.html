@@ -1,0 +1,245 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+BROADSTREET GREAT WILSON (EUROPE) | Find data on employers
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="search">Home</a>
+        </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">BROADSTREET GREAT WILSON (EUROPE)</li>
+    </ol>
+  </div>
+
+  <div class="govuk-grid-row govuk-!-margin-top-5">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+          BROADSTREET GREAT WILSON (EUROPE)
+      </h1>
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+        
+    </div>
+  </div>
+
+
+  
+
+ 
+
+
+  
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-5">
+    <div class="govuk-grid-column-one-third">
+        <div class="headline-stat-box section-border-top">
+            <span class="title">Extent</span>
+            <span class="figure">National</span>
+            <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                Focus in no single area and a presence of at least five employees in 376 out of 380 local authorities.
+            </div>
+        </div>
+    </div>  
+    <div class="govuk-grid-column-one-third">
+        <div class="headline-stat-box section-border-top">
+            <span class="title">Employees</span>
+            <span class="figure">37,467</span>
+            <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                Fourth largest employer in Great Britain.
+            </div>
+        </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <div class="headline-stat-box section-border-top">
+            <span class="title">Average salary</span>
+            <span class="figure">£11,479</span>
+            <div class="detail govuk-body-s">
+                <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Below the national average</strong> of £23,300 for all employers in Great Britain.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-5">
+
+    <div class="govuk-grid-column-full">
+      <hr>
+      </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+<h2 class="govuk-heading-m govuk-!-margin-bottom-1">
+
+              Where employees live
+
+</h2>
+
+
+          </div>
+    </div>
+
+    <div class="govuk-tabs" data-module="tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+      
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#chart">
+              Heatmap
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#table">
+              Table of data
+            </a>
+          </li>
+        </ul>
+      
+        <section class="govuk-tabs__panel" id="chart">
+         
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+Heatmap
+  
+  </h3><span class="govuk-hint">Select an area on the map to view more information</span>  
+  </div>
+  <div class="govuk-grid-column-one-third"></div>
+  </div>
+
+                      
+  <div class="govuk-grid-row">
+
+        
+        <div class="govuk-grid-column-two-thirds">
+          <img src="../../public/images/gb-map-zoomed.png" class="full-width-image"/>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p><strong><a href="emp-bgw-newcastle">Newcastle upon Tyne</a></strong></p>
+            <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                <strong>Employees</strong>
+              </div>
+              <div class="govuk-body-s label extra-annotation-emp">
+                <span class="figure-emp">804</span>
+                <div class="explainer"><p class="govuk-body-s"><strong>Ninth largest</strong> employer in Newcastle upon Tyne.</p><p class="govuk-body-s">Approximately 0.54% of this company’s employees live in Newcastle upon Tyne.</p></div>
+              </div>
+            
+                <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                    <strong>Salary</strong>
+                  </div>
+                  <div class="govuk-body-s label extra-annotation-emp">
+                    <span class="figure-emp">£10,461</span>
+                    <div class="explainer"><strong>Below the national average</strong> of £11,748 for this employer.</p></div>
+                  </div>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="govuk-tabs__panel" id="table">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+            Table of data
+              
+              </h3><span class="govuk-hint">Where employees live for the tax year 2015-2016</span>  
+              </div>
+              <div class="govuk-grid-column-one-third"></div>
+              </div>
+
+              <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+        
+                      <th class="govuk-table__header" scope="col"><span class="th-sort-link">Location</span></th>
+                      <th class="govuk-table__header" scope="col"><span class="th-sort-link">Employees</span></th>
+                      <th class="govuk-table__header" scope="col"><span class="th-sort-link">Change in employees</span></th>
+                    <th class="govuk-table__header" scope="col"><span class="th-sort-link">Average salary</span></th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+        
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"><a href="emp-bgw-newcastle">Newcastle upon Tyne</a></th>
+                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Employees: </span>804</td>    
+                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Change in employees: </span>7.61%</td>
+                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Average salary: </span>£10,461</td>
+                         
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row"><a href="emp-bgw-newcastle">Sunderland</a></th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Employees: </span>804</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Change in employees: </span>7.61%</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Average salary: </span>£10,461</td>
+                       
+                  </tr>
+                                
+                </tbody>
+              </table>
+
+            </div>
+        </div>
+      </section>
+
+    </div>
+
+
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                  <h2 class="govuk-heading-m">About this data</h2>
+                    <p>We work out this information by analysing HMRC Pay As You Earn (PAYE) data. Read more about our technical approach, and our data sources, on the <a href="methodology">methodology page</a>. </p>
+                </div>
+          </div>
+    </div>
+
+
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+  const dataitems = [
+  'BROADSTREET GREAT WILSON (EUROPE)',
+  'WHITBREAD GRP PLC INCL WHITBREAD',
+  'BRITISH UNITED PROVIDENT',
+  'GREENE KING PLC INCL BREWING',
+  'BRITISH AIRWAYS PLC INCL BRITISH',
+  'BROOK STREET (UK) LTD INCL BAFIN'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#autocomplete'),
+  displayMenu: 'overlay',
+  id: 'autocomplete', // To match it to the existing <label>.
+  source: dataitems
+})
+
+
+</script>
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}

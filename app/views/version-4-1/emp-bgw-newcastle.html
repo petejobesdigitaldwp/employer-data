@@ -1,0 +1,123 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+BROADSTREET GREAT WILSON (EUROPE) in Newcastle upon Tyne | Find data on employers
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="search">Home</a>
+        </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">BROADSTREET GREAT WILSON (EUROPE)</li>
+    </ol>
+  </div>
+
+  <div class="govuk-grid-row govuk-!-margin-top-5">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+          BROADSTREET GREAT WILSON (EUROPE) in Newcastle upon Tyne
+      </h1>
+     
+
+    </div>
+    </div>
+
+
+
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-5">
+    <div class="govuk-grid-column-one-third">
+        <div class="headline-stat-box section-border-top">
+            <span class="title">Employees</span>
+            <span class="figure">804</span>
+            <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                <p class="govuk-body-s"><strong> Ninth largest</strong> employer in Newcastle upon Tyne.</p><p class="govuk-body-s">Approximately 0.54% of this company’s employees live in Newcastle upon Tyne.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+        <div class="headline-stat-box section-border-top">
+            <span class="title">Average salary</span>
+            <span class="figure">£10,461</span>
+            <div class="detail govuk-body-s">
+                <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Below the national average</strong> of £11,748 for this employer.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="govuk-grid-row govuk-!-margin-bottom-5">
+    <div class="govuk-grid-column-two-thirds">
+        <div class="section-border-top-nav">
+               <h3 class="govuk-heading-s">More information</h3>
+               <ul class="govuk-list govuk-list--bullet">
+                   <li><a href="emp-bgw">BROADSTREET GREAT WILSON (EUROPE) overview</a></li>
+                   <li><a href="la-newcastle">Other employers in Newcastle upon Tyne</a></li>
+                   </ul>
+               </div>
+       </div> 
+    </div>
+    
+    <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <hr>
+      </div>
+      </div>
+    
+    
+    
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                      <h2 class="govuk-heading-m">About this data</h2>
+                        <p>We work out this information by analysing HMRC Pay As You Earn (PAYE) data. Read more about our technical approach, and our data sources, on the <a href="methodology">methodology page</a>. </p>
+                    </div>
+              </div>
+
+
+    </div>
+
+
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+  const dataitems = [
+  'BROADSTREET GREAT WILSON (EUROPE)',
+  'WHITBREAD GRP PLC INCL WHITBREAD',
+  'BRITISH UNITED PROVIDENT',
+  'GREENE KING PLC INCL BREWING',
+  'BRITISH AIRWAYS PLC INCL BRITISH',
+  'BROOK STREET (UK) LTD INCL BAFIN'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#autocomplete'),
+  displayMenu: 'overlay',
+  id: 'autocomplete', // To match it to the existing <label>.
+  source: dataitems
+})
+
+
+</script>
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}
